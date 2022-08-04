@@ -1,0 +1,274 @@
+/*================================================
+Site Main Content CSS
+=================================================*/
+
+
+/*================================================
+DVC + SMI Area CSS
+=================================================*/
+
+#dvc-section {
+    padding: 50px 0;
+    
+}
+
+/*================================================
+PDF ID Card Area CSS
+=================================================*/
+
+#smi-section {
+    padding: 50px 0;
+    background-color: #fafafa;
+}
+
+/*================================================
+Samples Area CSS
+=================================================*/
+
+#samples-section {
+    padding: 50px 0;
+    /* background: #242733; */
+    /* background-image: url(../../img/black-bg5.jpg); */
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* DVC Swiper CSS */
+
+.swiper-container.tray-carousel.templates .swiper-slide {
+    max-width: 250px;
+    /* background-color: #242733; */
+}
+
+.swiper-container.tray-carousel.templates .carousel-slider-animate-opacity {
+    height: 100%
+}
+
+.swiper-container.tray-carousel.templates img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba(255, 0, 0, .1) 0%, transparent 32px, transparent 100%)
+}
+
+.swiper-container.tray-carousel.templates .slide-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    padding: 160px 16px 17px;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+    border-radius: 0 0 35px 35px;
+}
+
+.swiper-container.tray-carousel.templates .slide-content h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 1.1;
+    color: #fff;
+    text-align: center;
+}
+
+.swiper-container.tray-carousel.templates .slide-content p {
+    margin: 0;
+    opacity: .85;
+    font-size: 14px;
+    font-weight: 500;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #fff;
+    text-align: center;
+}
+
+.swiper-container.tray-carousel.templates .slide-content .preview-demo-btn {
+    text-align: center;
+    padding: 6px;
+    margin-top: 20px;
+    opacity: 0.95;
+}
+
+.swiper-container.tray-carousel.templates .swiper-button-next {
+    right: 130px;
+}
+
+.swiper-container.tray-carousel.templates .swiper-button-prev {
+    left: 130px;
+}
+
+/* SMI Swiper CSS */
+
+.swiper-container.tray-carousel.smi-templates {
+    overflow: hidden;
+    margin-top: 90px;
+}
+
+.swiper-container.tray-carousel.smi-templates .swiper-slide {
+    max-width: 300px;
+    background-color: #242733;
+}
+
+.swiper-container.tray-carousel.smi-templates img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(bottom, rgba(255, 0, 0, .1) 0%, transparent 32px, transparent 100%)
+}
+
+/*================================================
+Pricing Area CSS
+=================================================*/
+
+#pricing-section {
+    padding-bottom: 70px;
+    padding-top: 70px;
+}
+
+#pricing-section.extra-mb {
+    margin-bottom: -480px;
+}
+
+/* Common across sections */
+
+#dvc-section .tray-container .section-title,
+#smi-section .tray-container .section-title {
+    margin-bottom: 10px;
+}
+
+#dvc-section .tray-container .section-title span .icon,
+#smi-section .tray-container .section-title span .icon {
+    margin-left: 0;
+}
+
+#dvc-section .tray-container .section-title h2,
+#smi-section .tray-container .section-title h2 {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.tray-container {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: -30px;
+}
+
+#dvc-section .tray-container .swiper-slide.tray-slide,
+#smi-section .tray-container .swiper-slide.tray-slide {
+    max-width: 210px;
+}
+
+/* /*================================================
+Responsive CSS
+=================================================*/
+
+@media only screen and (max-width: 1200px) {
+    .swiper-container.tray-carousel.templates .swiper-button-next {
+        right: 40px;
+    }
+    .swiper-container.tray-carousel.templates .swiper-button-prev {
+        left: 40px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .top-heading .top-heading-before {
+        font-size: 22px;
+    }
+    .top-heading .top-heading-main {
+        font-size: 30px;
+    }
+    .top-heading .top-heading-after {
+        font-size: 22px;
+    }
+    .plus-heading {
+        margin: 0 20px;
+        font-size: 40px;
+        margin-bottom: 18px;
+    }
+    #dvc-section .row {
+        flex-direction: column-reverse;
+    }
+    .swiper-container.tray-carousel.templates .swiper-button-next {
+        right: -80px;
+    }
+    .swiper-container.tray-carousel.templates .swiper-button-prev {
+        left: -80px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .top-heading-container {
+        flex-direction: column;
+    }
+    #top-heading-section {
+        background-image: unset;
+        background-color: #ffffff;
+    }
+    #top-heading-section .container {
+        padding: 60px 0;
+    }
+    #dvc-section .tray-container .section-title h2,
+    #smi-section .tray-container .section-title h2 {
+        font-size: 20px;
+    }
+    #dvc-section .tray-container .swiper-slide.tray-slide,
+    #smi-section .tray-container .swiper-slide.tray-slide {
+        max-width: 180px;
+    }
+    .shape-img1 {
+        width: 80%;
+    }
+    .swiper-container.tray-carousel.templates .swiper-slide {
+        max-width: 180px;
+    }
+    .swiper-container.tray-carousel.templates .swiper-button-next {
+        right: 20px;
+        top: 380px;
+    }
+    .swiper-container.tray-carousel.templates .swiper-button-prev {
+        left: 20px;
+        top: 380px;
+    }
+    .swiper-container.tray-carousel.templates .slide-content h2 {
+        font-size: 20px;
+    }
+    .swiper-container.tray-carousel.templates .slide-content p {
+        font-size: 12px;
+    }
+    .swiper-container.tray-carousel.templates .slide-content .preview-demo-btn {
+        margin-top: 8px;
+    }
+    .swiper-container.tray-carousel.smi-templates {
+        overflow: initial;
+    }
+    .swiper-container.tray-carousel.smi-templates .swiper-slide {
+        max-width: 200px;
+    }
+    .swiper-container.tray-carousel.smi-templates .swiper-button-next {
+        top: 220px;
+        background-color: #fff;
+        color: #242733;
+    }
+    .swiper-container.tray-carousel.smi-templates .swiper-button-next::after {
+        color: #242733;
+    }
+    .swiper-container.tray-carousel.smi-templates .swiper-button-prev {
+        top: 220px;
+        background-color: #fff;
+        color: #242733;
+    }
+    .swiper-container.tray-carousel.smi-templates .swiper-button-prev::after {
+        color: #242733;
+    }
+}  
